@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #ff007f;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.calculator {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff007f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.form {
+    margin-top: 50px;
+}
+
+header {
+    background-color: #ff007f;
+    color: #ffffff;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #ff007f;
+}
