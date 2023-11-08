@@ -3,6 +3,7 @@ body {
     background-color: #ffffff;
     color: #ff007f;
     text-align: center;
+    margin: 0;
 }
 
 .container {
@@ -11,32 +12,69 @@ body {
     padding: 20px;
 }
 
-.calculator {
-    margin-top: 20px;
-}
-
-button {
-    background-color: #ff007f;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.form {
-    margin-top: 50px;
-}
-
 header {
     background-color: #ff007f;
     color: #ffffff;
     padding: 10px;
-}
-
-h1 {
+    width: 100%;
+    text-align: center;
     margin: 0;
 }
 
-h2 {
+.calculator {
+    margin-top: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.styled-input {
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #ff007f;
+    border-radius: 10px;
+}
+
+
+
+/* styles.css */
+
+/* Standard CSS for the range input */
+.round-input {
+    width: 100%;
+    height: 20px;
+    background-color: hotpink;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 10px;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.round-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px; /* Set the width of the thumb */
+    height: 24px; /* Set the height of the thumb */
+    background-color: white; /* Set the color of the thumb */
+    border: 2px solid hotpink; /* Add border for the thumb */
+    border-radius: 50%; /* Create a circular thumb */
+    cursor: pointer; /* Add a pointer cursor */
+}
+
+/* For Firefox */
+.round-input::-moz-range-thumb {
+    width: 24px; /* Set the width of the thumb */
+    height: 24px; /* Set the height of the thumb */
+    background-color: white; /* Set the color of the thumb */
+    border: 2px solid hotpink; /* Add border for the thumb */
+    border-radius: 50%; /* Create a circular thumb */
+    cursor: pointer; /* Add a pointer cursor */
+}
+
+
+#periodValue {
+    font-size: 18px;
     color: #ff007f;
 }

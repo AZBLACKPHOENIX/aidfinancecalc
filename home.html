@@ -9,24 +9,23 @@
 </head>
 
 <body>
+    <header>
+        <h1>AID FINANCE</h1>
+    </header>
     <div class="container">
-        <header>
-            <h1>BUSINES PARTNERS FIXED INVESTMENTS CALCULATOR</h1>
-        </header>
+     
         <div class="calculator">
-            <label for="investmentAmount">Enter Investment Amount:</label>
-            <input type="number" id="investmentAmount">
-            <label for="investmentPeriod">Select Investment Period:</label>
-            <select id="investmentPeriod">
-                <option value="6">6 months</option>
-                <option value="12">12 months</option>
-            </select>
-            <button onclick="calculateROI()">Calculate ROI</button>
-            <h2 id="result"></h2>
-        </div>
-        <div class="form">
-            <h2>Contact Us</h2>
-            <!-- Your contact form fields can go here -->
+            <div class="input-group">
+                <label for="investmentAmount">Enter Investment Amount (in R):</label>
+                <input type="number" id="investmentAmount" class="styled-input">
+            </div>
+            <div class="input-group">
+                <label for="investmentPeriod">Select Investment Period (in months):</label>
+                <input type="range" id="investmentPeriod" class="round-input" min="1" max="12" step="1">
+                <span id="periodValue">1 month</span>
+            </div>
+            <h2 id="roi">Return on Investment: R0.00</h2>
+            <h2 id="totalAmount">Total Amount Returned: R0.00</h2>
         </div>
     </div>
     <script src="script.js"></script>
