@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (investmentAmount >= 1 && investmentPeriod >= 1) {
             const totalAmount = investmentAmount * 0.05 * investmentPeriod;
+            const totalamou = investmentAmount + totalAmount;
             roiElement.textContent = "Return on Investment: R" + totalAmount.toFixed(2);
-            totalAmountElement.textContent = "Total Amount Returned: R" + totalAmount.toFixed(2);
+            totalAmountElement.textContent = "Total Amount Returned: R" + totalamou.toFixed(2);
         } else {
             roiElement.textContent = "Return on Investment: R0.00";
             totalAmountElement.textContent = "Total Amount Returned: R0.00";
